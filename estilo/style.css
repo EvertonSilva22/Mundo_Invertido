@@ -24,6 +24,7 @@
     --character-bottom-image-src: url("/images/characters/inverted-world-monster.svg");
     --character-bottom-image-color: #e5e5e5;
     --background-lamp-image: url("/images/backgrounds/lamps.png");
+    --background-stranger-things: url("/images/content/stranger-things.png");
     --footer-background-color: #b5bbbf;
   }  
 
@@ -42,6 +43,7 @@
     --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
     --character-top-image-color: #000;
     --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+    --background-stranger-things: url("/images/content/stranger-things-mundo-invertido.png");
     --footer-background-color: #000;
   }
   
@@ -294,6 +296,44 @@ main::before {
   }
 
   #section-stranger-things-gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid var(--highlight-color);
+  }
+
+  /* Seção 04 - Stranger Things Galeria */
+
+  #secao-stranger-things-galeria {
+    width: 100%;
+    background: var(--background-stranger-things) 100% / 25% no-repeat;
+    justify-content: center;
+  }
+
+  #secao-stranger-things-galeria .container {
+    width: 100%;
+  }
+
+  #secao-stranger-things-galeria .container h2 {
+    width: 1000px;
+  }
+
+
+  #secao-stranger-things-galeria .gallery-container {
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+  }
+
+  #secao-stranger-things-galeria .gallery-image {
+    width: 250px;
+    height: 300px;
+    outline: 20px solid var(--primary-color);
+    border: 3px solid var(--highlight-color);
+    box-sizing: initial;
+  }
+
+  #secao-stranger-things-galeria .gallery-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
